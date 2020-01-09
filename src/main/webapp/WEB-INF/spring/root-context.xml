@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+		
+	<!-- 디비연결 -->
+		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+			<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+			<property name="url" value="jdbc:mysql://localhost:3306/jspdb1"></property>
+			<property name="username" value="jspid"></property>
+			<property name="password" value="jsppass"></property>
+		</bean>	
+		
+		<!-- MyBatis 세팅-->
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="dataSource" ref="dataSource"/>
+			<property name="configLocation" value="classpath:/mybatis-config.xml"/>
+			<property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml"/> <!-- xx폴더 안에 XXXMapper를 인식할 수 있도록 *이용해서 이렇게 설정 -->
+		</bean>
+		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="clearCache">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"></constructor-arg>
+		
+		</bean>
+		
+		<!--aop 자동 동작을 위한 세팅  -->
+<!-- 		<aop:aspectj-autoproxy/> -->
+		
+		<!-- aop활용 위한 트랜잭션 세팅  -->
+		<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+		</bean>
+
+		<!-- 트랜잭션의 어노테이션 드리븐 설정 -->
+<!-- 		<tx:annotation-driven /> -->
+	
+		<!-- aop설정 -->
+<!-- 		<aop:config> -->
+<!-- 		</aop:config> -->
+		
+		
+</beans>
