@@ -70,7 +70,7 @@
           <div class="col-lg-7 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
           		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>WINESEARCHER<small>Team Etranger</small></a></h1>
-		  				<h1 class="mb-4">We Can Findssss ddd<br> What you need</h1>
+		  				<h1 class="mb-4">We Can Find<br> What you need</h1>
 		  				<p class="mb-4">You don't have to take a picture, just show your wines using a camera app. voila! you can easily find information about wine.</p>
 		  				<p class="mt-5"><a href="#" class="btn-custom">Contact us <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
