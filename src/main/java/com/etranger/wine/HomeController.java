@@ -1,4 +1,4 @@
-package com.etranger.com;
+package com.etranger.wine;
 
 import java.text.DateFormat;
 import java.util.Date;

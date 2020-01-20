@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.etranger.com">
+	<logger name="com.etranger.wine">
 		<level value="info" />
 	</logger>
 	

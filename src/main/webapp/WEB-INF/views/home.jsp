@@ -97,7 +97,7 @@
     			<div class="col-md-6 col-lg-6 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-	    				<div class="img img-video d-flex align-self-stretch align-items-center" style="background-image:url(images/about-2.jpg);">
+	    				<div class="img img-video d-flex align-self-stretch align-items-center" style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');">
 	    					<div class="video justify-content-center">
 									<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
 										<span class="ion-ios-play"></span>
@@ -120,8 +120,8 @@
 	              </div>
 		          </div>
 		          <div class="d-flex w-100">
-		            <div class="img img-about-2 mr-2" style="background-image: url(images/about.jpg);"></div>
-		            <div class="img img-about-2 ml-2" style="background-image: url(images/about-3.jpg);"></div>
+		            <div class="img img-about-2 mr-2" style="background-image:url('<c:url value="/resources/images/about.jpg"/>');"></div>
+		            <div class="img img-about-2 ml-2" style="background-image:url('<c:url value="/resources/images/about-3.jpg"/>');"></div>
 		          </div>
 		          <blockquote class="blockquote mt-5">
 		          	<p class="mb-2">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.."</p>
