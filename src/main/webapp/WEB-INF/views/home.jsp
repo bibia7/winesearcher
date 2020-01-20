@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Snapshot - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Wine Searcher</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -73,7 +73,7 @@
 		<!-- End Nav Section -->
 
 		<!-- Start Home Section -->
-		<section id="home" class="hero-wrap js-fullheight" style="background-image: url(images/bg-1.jpg);" data-stellar-background-ratio="0.5">
+		<section id="home" class="hero-wrap js-fullheight" style="background-image:url('<c:url value="images/bg-1.jpg0"/>');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
