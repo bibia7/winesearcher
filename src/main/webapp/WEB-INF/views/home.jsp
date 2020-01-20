@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,24 +13,25 @@
 
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/open-iconic-bootstrap.min.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/animate.css"/>' type="text/css">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/owl.carousel.min.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/owl.theme.default.min.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/magnific-popup.css"/>' type="text/css">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/aos.css"/>' type="text/css">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/ionicons.min.css"/>' type="text/css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/bootstrap-datepicker.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/jquery.timepicker.css"/>' type="text/css">
 
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/flaticon.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/icomoon.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>' type="text/css">
+
   </head>
   <body>
 
@@ -642,20 +644,21 @@
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
+    <script src='<c:url value="/resources/js/jquery.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery-migrate-3.0.1.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/popper.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/bootstrap.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery.easing.1.3.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery.waypoints.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery.stellar.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/owl.carousel.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery.magnific-popup.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/aos.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/jquery.animateNumber.min.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/scrollax.min.js"/>' type="text/javascript"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
-    <script src="js/main.js"></script>
+    <script src='<c:url value="/resources/js/google-map.js"/>' type="text/javascript"></script>
+    <script src='<c:url value="/resources/js/main.js"/>' type="text/javascript"></script>
+
   </body>
 </html>
