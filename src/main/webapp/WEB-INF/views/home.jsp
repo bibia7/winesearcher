@@ -6,32 +6,22 @@
   <head>
     <title>Wine Searcher</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href='<c:url value="/resources/css/open-iconic-bootstrap.min.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/animate.css"/>' type="text/css">
-    
     <link rel="stylesheet" href='<c:url value="/resources/css/owl.carousel.min.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/owl.theme.default.min.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/magnific-popup.css"/>' type="text/css">
-
     <link rel="stylesheet" href='<c:url value="/resources/css/aos.css"/>' type="text/css">
-
     <link rel="stylesheet" href='<c:url value="/resources/css/ionicons.min.css"/>' type="text/css">
-
     <link rel="stylesheet" href='<c:url value="/resources/css/bootstrap-datepicker.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/jquery.timepicker.css"/>' type="text/css">
-
-    
     <link rel="stylesheet" href='<c:url value="/resources/css/flaticon.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/icomoon.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>' type="text/css">
-
   </head>
   <body>
 
@@ -73,15 +63,15 @@
 		<!-- End Nav Section -->
 
 		<!-- Start Home Section -->
-		<section id="home" class="hero-wrap js-fullheight" style="background-image:url('<c:url value="images/bg-1.jpg0"/>');" data-stellar-background-ratio="0.5">
+		<section id="home" class="hero-wrap js-fullheight" style="background-image:url('<c:url value="/resources/images/bg-1.jpg"/>');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-lg-7 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-          		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>Snapshot<small>Photographer / San Francisco</small></a></h1>
-		  				<h1 class="mb-4">We Make <br>Something Great</h1>
-		  				<p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts.</p>
+          		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>WINESEARCHER<small>Team Etranger</small></a></h1>
+		  				<h1 class="mb-4">We Can Findssss ddd<br> What you need</h1>
+		  				<p class="mb-4">You don't have to take a picture, just show your wines using a camera app. voila! you can easily find information about wine.</p>
 		  				<p class="mt-5"><a href="#" class="btn-custom">Contact us <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
@@ -142,7 +132,7 @@
 		  			<div class="row">
 				  		<div class="col-md-5 heading-section ftco-animate pb-5">
 		            <h2 class="mb-4">Photography Services</h2>
-		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
+		            <p></p>
 		          </div>
 				  	</div>
 		  			<div class="row">
@@ -176,7 +166,7 @@
 	        	</div>
 	        </div>
 	        <div class="col-md-3 d-flex align-items-stretch">
-	        	<div class="img w-100" style="background-image: url(images/about.jpg);"></div>
+	        	<div class="img w-100" style="background-image:url('<c:url value="/resources/images/about.jpg"/>');"></div>
 	        </div>
         </div>
         <div class="row progress-circle pt-md-5">
@@ -250,7 +240,7 @@
 					  </div>
 					</div>
 					<div class="col-md-5 d-flex align-items-stretch">
-	        	<div class="img w-100" style="background-image: url(images/about-2.jpg);"></div>
+	        	<div class="img w-100" style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');"></div>
 	        </div>
 		  	</div>
 		  </div>
@@ -270,7 +260,7 @@
 		  <div class="container-fluid px-md-0">
         <div class="row no-gutters">
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-1.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-1.jpg"/>');">
             	<a href="images/model-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -283,7 +273,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-2.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-2.jpg"/>');">
             	<a href="images/model-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -296,7 +286,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-3.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-3.jpg"/>');">
             	<a href="images/model-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -310,7 +300,7 @@
           </div>
 
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-4.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-4.jpg"/>');">
             	<a href="images/model-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -323,7 +313,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-5.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-5.jpg"/>');">
             	<a href="images/model-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -336,7 +326,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-6.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-6.jpg"/>');">
             	<a href="images/model-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -350,7 +340,7 @@
           </div>
 
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-7.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-7.jpg"/>');">
             	<a href="images/model-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -363,7 +353,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-8.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-8.jpg"/>');">
             	<a href="images/model-8.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -376,7 +366,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-9.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-9.jpg"/>');">
             	<a href="images/model-9.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -390,7 +380,7 @@
           </div>
 
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-10.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-10.jpg"/>');">
             	<a href="images/model-10.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -403,7 +393,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-11.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-11.jpg"/>');">
             	<a href="images/model-11.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -416,7 +406,7 @@
             </div>
           </div>
           <div class="col-md-4 ftco-animate">
-            <div class="model img d-flex align-items-end" style="background-image: url(images/model-12.jpg);">
+            <div class="model img d-flex align-items-end" style="background-image:url('<c:url value="/resources/images/model-12.jpg"/>');">
             	<a href="images/model-12.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 	    					<span class="icon-expand"></span>
 	    				</a>
@@ -447,7 +437,7 @@
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -463,7 +453,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                  <div class="user-img mb-4" style="background-image:url('<c:url value="/resources/images/person_2.jpg"/>');">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -479,7 +469,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                  <div class="user-img mb-4" style="background-image:url('<c:url value="/resources/images/person_3.jpg"/>');">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -495,7 +485,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
@@ -511,7 +501,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                  <div class="user-img mb-4" style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
