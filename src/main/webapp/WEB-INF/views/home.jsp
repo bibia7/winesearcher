@@ -71,7 +71,7 @@
           	<div class="text text-center">
           		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>WINESEARCHER<small>Team Etranger</small></a></h1>
 		  				<h1 class="mb-4">We Can Find<br> What you need</h1>
-		  				<p class="mb-4">You don't have to take a picture, just show your wines using a camera app. voila! you can easily find information about wine.</p>
+		  				<p class="mb-4">You don't have to take a picture, just show your wines using a camera app. voila! You can easily find the information about wine.</p>
 		  				<p class="mt-5"><a href="#" class="btn-custom">Contact us <span class="ion-ios-arrow-round-forward"></span></a></p>
             </div>
           </div>
@@ -526,7 +526,7 @@
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-4 heading-section text-center ftco-animate">
-            <h2 class="mb-4">Contact Me</h2>
+            <h2 class="mb-4">Contact Us</h2>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
           </div>
         </div>
@@ -550,7 +550,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Contact Number</h3>
-		            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+		            <p><a href="tel://1234567920">+8110 9989 8564</a></p>
 	            </div>
 	          </div>
           </div>
@@ -561,7 +561,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Email Address</h3>
-		            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+		            <p><a href="mailto:info@yoursite.com">iamheb777@gmail.com</a></p>
 		          </div>
 	          </div>
           </div>
@@ -572,7 +572,7 @@
           		</div>
           		<div>
 	          		<h3 class="mb-4">Website</h3>
-		            <p><a href="#">yoursite.com</a></p>
+		            <p><a href="#">github.com/bibia7/winesearcher</a></p>
 	            </div>
 	          </div>
           </div>
