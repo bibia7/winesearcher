@@ -3,11 +3,6 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-  <mapper namespace="com.etranger.mapper.ItemMapper">
- 
- <select id="getItemList" resultType="com.etranger.item.domain.ItemBean">
- 	select * from wine
- </select>
- 
+  <mapper namespace="com.itwillbs.mapper.MemberMapper">
   </mapper>
   

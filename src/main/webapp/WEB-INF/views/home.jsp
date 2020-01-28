@@ -3,7 +3,6 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <title>Wine Searcher</title>
 <meta charset="utf-8">
@@ -49,13 +48,15 @@
 <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>'
 	type="text/css">
 </head>
-
 <body>
 
 
 	<nav id="navbar" class="navbar">
 		<ul class="nav-menu">
 			<li><a data-scroll="home" href="#home" class="dot active"> <span>Home</span>
+			</a></li>
+			<li><a data-scroll="loginJoin" href="#loginJoin"
+				class="dot active"> <span>login-Join</span>
 			</a></li>
 			<li><a data-scroll="about" href="#about" class="dot"> <span>About</span>
 			</a></li>
@@ -104,131 +105,78 @@
 	</section>
 	<!-- End Home Section -->
 
-	<!-- Start About Me Section -->
-	<section class="ftco-about img ftco-section" id="about">
+	<!-- Start login Section -->
+	<section class="ftco-section contact-section" id="loginJoin">
 		<div class="container">
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div
-							class="img img-video d-flex align-self-stretch align-items-center"
-							style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');">
-							<div class="video justify-content-center">
-								<a href="https://vimeo.com/45830194"
-									class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-									<span class="ion-ios-play"></span>
-								</a>
-							</div>
+			<div class="row block-9">
+				<div class="col-md-6 ftco-animate">
+					<form action="login" class="contact-form p-4 p-md-5 py-md-5">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Email">
 						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5">
-					<div class="heading-section ftco-animate">
-						<h2 class="mb-4">
-							Snapshot is A Creative Direction, <br>Photography Agency
-						</h2>
-						<p>A small river named Duden flows by their place and supplies
-							it with the necessary regelialia. It is a paradisematic country,
-							in which roasted parts of sentences fly into your mouth.Far far
-							away, behind the word mountains, far from the countries Vokalia
-							and Consonantia, there live the blind texts. Separated they live
-							in Bookmarksgrove right at the coast of the Semantics, a large
-							language ocean.</p>
+						<div class="form-group">
+							<input type="password" class="form-control"
+								placeholder="Your Password">
+						</div>
+						<div class="form-group">
+							<input type="submit" value="LOG-IN"
+								class="btn btn-primary py-3 px-5">
+						</div>
 
-						<div class="counter-wrap ftco-animate d-flex my-md-4">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="120">0</span> <span>Project
-										complete</span>
-								</p>
-							</div>
+						<div class="form-group">
+							<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+							<a id="custom-login-btn" href="javascript:loginWithKakao()">
+								<img
+								src="//mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg"
+								width="300" />
+							</a>
+							<script type='text/javascript'>
+								//<![CDATA[
+								// 사용할 앱의 JavaScript 키를 설정해 주세요.
+								Kakao.init('743a81b9285981e56b10a62ade2d2fff');
+								function loginWithKakao() {
+									// 로그인 창을 띄웁니다.
+									Kakao.Auth.login({
+										success : function(authObj) {
+											alert(JSON.stringify(authObj));
+										},
+										fail : function(err) {
+											alert(JSON.stringify(err));
+										}
+									});
+								};
+								//]]>
+							</script>
 						</div>
-						<div class="d-flex w-100">
-							<div class="img img-about-2 mr-2"
-								style="background-image:url('<c:url value="/resources/images/about.jpg"/>');">
-							</div>
-							<div class="img img-about-2 ml-2"
-								style="background-image:url('<c:url value="/resources/images/about-3.jpg"/>');">
-							</div>
-						</div>
-						<blockquote class="blockquote mt-5">
-							<p class="mb-2">"Far far away, behind the word mountains, far
-								from the countries Vokalia and Consonantia.."</p>
-							<span>&mdash; Lucy Lee</span>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End About Me Section -->
+						<div class="form-group">
+							<script type="text/javascript"
+								src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js"
+								charset="utf-8"></script>
+							<!-- 네이버아이디로로그인 버튼 노출 영역 -->
+							<div id="naverIdLogin"></div>
+							<!-- //네이버아이디로로그인 버튼 노출 영역 -->
+							<!-- 네이버아디디로로그인 초기화 Script -->
+							<script type="text/javascript">
+								var naverLogin = new naver.LoginWithNaverId(
+										{
+											clientId : "6pcogsakeagRCsy4J3YN",
+											callbackUrl : "http://localhost:8080/wine/login-cb",
+											isPopup : false, /* 팝업을 통한 연동처리 여부 */
+											loginButton : {
+												color : "green",
+												type : 3,
+												height : 48
+											}
+										/* 로그인 버튼의 타입을 지정 */
+										});
 
-	<!-- Start Services Section -->
-	<section id="services" class="ftco-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-5 heading-section ftco-animate pb-5">
-							<h2 class="mb-4">Photography Services</h2>
-							<p></p>
+								/* 설정정보를 초기화하고 연동을 준비 */
+								naverLogin.init();
+							</script>
+							<!-- // 네이버아이디로로그인 초기화 Script -->
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-camera"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Movies &amp; Advertising Videos</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-player"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Clip &amp; Music Videos</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-player-1"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Short Film Productions</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					</form>
 				</div>
-				<div class="col-md-3 d-flex align-items-stretch">
-					<div class="img w-100"
-						style="background-image:url('<c:url value="/resources/images/about.jpg"/>');">
-					</div>
-				</div>
-			</div>
-			<div class="row progress-circle pt-md-5">
-				<div class="col-md-7 order-md-last py-md-5">
-					<div class="row">
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Creation</h2>
 
 								<!-- Progress bar 1 -->
 								<div class="progress mx-auto" data-value='90'>
@@ -668,5 +616,4 @@
 		type="text/javascript"></script>
 
 </body>
-
 </html>

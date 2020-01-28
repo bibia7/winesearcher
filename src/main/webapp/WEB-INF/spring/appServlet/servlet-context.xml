@@ -34,13 +34,10 @@
 		</beans:constructor-arg>
 	</beans:bean>
 	
-	
 	<context:component-scan base-package="com.etranger.wine.controller" />
 	<context:component-scan base-package="com.etranger.wine.dao" />
 	<context:component-scan base-package="com.etranger.wine.service" />
-	
-	<context:component-scan base-package="com.etranger.item.controller" />
-	<context:component-scan base-package="com.etranger.item.dao" />
-	<context:component-scan base-package="com.etranger.item.service" />
+
+
 	
 </beans:beans>
