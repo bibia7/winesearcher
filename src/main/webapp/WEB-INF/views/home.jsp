@@ -3,6 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <title>Wine Searcher</title>
 <meta charset="utf-8">
@@ -48,15 +49,13 @@
 <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>'
 	type="text/css">
 </head>
+
 <body>
 
 
 	<nav id="navbar" class="navbar">
 		<ul class="nav-menu">
 			<li><a data-scroll="home" href="#home" class="dot active"> <span>Home</span>
-			</a></li>
-			<li><a data-scroll="loginJoin" href="#loginJoin"
-				class="dot active"> <span>login-Join</span>
 			</a></li>
 			<li><a data-scroll="about" href="#about" class="dot"> <span>About</span>
 			</a></li>
@@ -169,7 +168,6 @@
 											}
 										/* 로그인 버튼의 타입을 지정 */
 										});
-
 								/* 설정정보를 초기화하고 연동을 준비 */
 								naverLogin.init();
 							</script>
@@ -178,86 +176,27 @@
 					</form>
 				</div>
 
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='90'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											90<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
+				<div class="col-md-6 d-flex align-items-stretch">
+					<form action="join" class="contact-form p-4 p-md-5 py-md-5">
+						<h3 class="mb-4">didn't you sign-in yet? join us</h3>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control"
+								placeholder="Your Password">
+						</div>
+						<div class="form-group">
+							<input type="submit" value="JOIN"
+								class="btn btn-primary py-3 px-5">
 						</div>
 
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Development</h2>
-
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='80'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											80<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
-						</div>
-
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Production</h2>
-
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='75'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											75<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
-						</div>
-
-						<div class="p-md-4 mt-4">
-							<div class="col-md-8 ftco-animate">
-								<p>Far far away, behind the word mountains, far from the
-									countries Vokalia and Consonantia, there live the blind texts.
-									Separated they live in Bookmarksgrove right at the coast.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-5 d-flex align-items-stretch">
-					<div class="img w-100"
-						style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');">
-					</div>
+					</form>
 				</div>
 			</div>
-		</div>
+			</div>
 	</section>
-	<!-- End Services Section -->
+	<!-- End login Section -->
 
 	<!-- Start Testimonials Section -->
 	<section id="work" class="ftco-section">
@@ -616,4 +555,5 @@
 		type="text/javascript"></script>
 
 </body>
+
 </html>
