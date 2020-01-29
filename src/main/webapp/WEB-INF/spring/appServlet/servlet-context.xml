@@ -33,14 +33,11 @@
 		<beans:constructor-arg value="D:\\workspace_sts\\FunWeb\\src\\main\\webapp\\resources\\upload">
 		</beans:constructor-arg>
 	</beans:bean>
-	
-	
+
 	<context:component-scan base-package="com.etranger.wine" />
 	<context:component-scan base-package="com.etranger.controller" />
 	<context:component-scan base-package="com.etranger.dao" />
-	<context:component-scan base-package="com.etranger.domain" />
 	<context:component-scan base-package="com.etranger.service" />
-	
 	
 	
 </beans:beans>

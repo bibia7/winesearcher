@@ -3,6 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <title>Wine Searcher</title>
 <meta charset="utf-8">
@@ -48,6 +49,7 @@
 <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>'
 	type="text/css">
 </head>
+
 <body>
 
 
@@ -55,18 +57,10 @@
 		<ul class="nav-menu">
 			<li><a data-scroll="home" href="#home" class="dot active"> <span>Home</span>
 			</a></li>
-			<li><a data-scroll="loginJoin" href="#loginJoin"
-				class="dot active"> <span>login-Join</span>
-			</a></li>
-			<li><a data-scroll="about" href="#about" class="dot"> <span>About</span>
-			</a></li>
-			<li><a data-scroll="services" href="#services" class="dot">
-					<span>Services</span>
-			</a></li>
 			<li><a data-scroll="work" href="#work" class="dot"> <span>Gallery</span>
 			</a></li>
 			<li><a data-scroll="testimonial" href="#testimonial" class="dot">
-					<span>Testimony</span>
+					<span>Review</span>
 			</a></li>
 			<li><a data-scroll="contact" href="#contact" class="dot"> <span>Contact</span>
 			</a></li>
@@ -169,7 +163,6 @@
 											}
 										/* 로그인 버튼의 타입을 지정 */
 										});
-
 								/* 설정정보를 초기화하고 연동을 준비 */
 								naverLogin.init();
 							</script>
@@ -195,216 +188,12 @@
 
 					</form>
 				</div>
-
+			</div>
 			</div>
 	</section>
 	<!-- End login Section -->
 
-	<!-- Start About Me Section -->
-	<section class="ftco-about img ftco-section" id="about">
-		<div class="container">
-
-			<div class="row d-flex no-gutters">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div
-							class="img img-video d-flex align-self-stretch align-items-center"
-							style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');">
-							<div class="video justify-content-center">
-								<a href="https://vimeo.com/45830194"
-									class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
-									<span class="ion-ios-play"></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5">
-					<div class="heading-section ftco-animate">
-						<h2 class="mb-4">
-							Snapshot is A Creative Direction, <br>Photography Agency
-						</h2>
-						<p>A small river named Duden flows by their place and supplies
-							it with the necessary regelialia. It is a paradisematic country,
-							in which roasted parts of sentences fly into your mouth.Far far
-							away, behind the word mountains, far from the countries Vokalia
-							and Consonantia, there live the blind texts. Separated they live
-							in Bookmarksgrove right at the coast of the Semantics, a large
-							language ocean.</p>
-
-						<div class="counter-wrap ftco-animate d-flex my-md-4">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="120">0</span> <span>Project
-										complete</span>
-								</p>
-							</div>
-						</div>
-						<div class="d-flex w-100">
-							<div class="img img-about-2 mr-2"
-								style="background-image:url('<c:url value="/resources/images/about.jpg"/>');"></div>
-							<div class="img img-about-2 ml-2"
-								style="background-image:url('<c:url value="/resources/images/about-3.jpg"/>');"></div>
-						</div>
-						<blockquote class="blockquote mt-5">
-							<p class="mb-2">"Far far away, behind the word mountains, far
-								from the countries Vokalia and Consonantia.."</p>
-							<span>&mdash; Lucy Lee</span>
-						</blockquote>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End About Me Section -->
-
-	<!-- Start Services Section -->
-	<section id="services" class="ftco-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<div class="row">
-						<div class="col-md-5 heading-section ftco-animate pb-5">
-							<h2 class="mb-4">Photography Services</h2>
-							<p></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-camera"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Movies &amp; Advertising Videos</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-player"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Clip &amp; Music Videos</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="media block-6 services d-block ftco-animate">
-								<div class="icon">
-									<span class="flaticon-video-player-1"></span>
-								</div>
-								<div class="media-body">
-									<h3 class="heading mb-3">Short Film Productions</h3>
-									<p>A small river named Duden flows by their place and
-										supplies it with the necessary regelialia. It is a
-										paradisematic country, in which roasted parts of sentences.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 d-flex align-items-stretch">
-					<div class="img w-100"
-						style="background-image:url('<c:url value="/resources/images/about.jpg"/>');"></div>
-				</div>
-			</div>
-			<div class="row progress-circle pt-md-5">
-				<div class="col-md-7 order-md-last py-md-5">
-					<div class="row">
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Creation</h2>
-
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='90'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											90<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
-						</div>
-
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Development</h2>
-
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='80'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											80<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
-						</div>
-
-						<div class="col-md-4 mb-md-0 mb-4 ftco-animate">
-							<div class="">
-								<h2 class="text-center mb-4">Production</h2>
-
-								<!-- Progress bar 1 -->
-								<div class="progress mx-auto" data-value='75'>
-									<span class="progress-left"> <span
-										class="progress-bar border-primary"></span>
-									</span> <span class="progress-right"> <span
-										class="progress-bar border-primary"></span>
-									</span>
-									<div
-										class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-										<div class="h5">
-											75<sup class="small">%</sup>
-										</div>
-									</div>
-								</div>
-								<!-- END -->
-							</div>
-						</div>
-
-						<div class="p-md-4 mt-4">
-							<div class="col-md-8 ftco-animate">
-								<p>Far far away, behind the word mountains, far from the
-									countries Vokalia and Consonantia, there live the blind texts.
-									Separated they live in Bookmarksgrove right at the coast.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-5 d-flex align-items-stretch">
-					<div class="img w-100"
-						style="background-image:url('<c:url value="/resources/images/about-2.jpg"/>');"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Services Section -->
-
-	<!-- Start Testimonials Section -->
+	<!-- Start Project Section -->
 	<section id="work" class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -415,225 +204,63 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- 와인 목록 -->
 		<div class="container-fluid px-md-0">
 			<div class="row no-gutters">
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-1.jpg"/>');">
-						<a href="images/model-1.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
+				<c:forEach var="wl" items="${wineList }">
+					<div class="col-md-4 ftco-animate">
+						<div class="model img d-flex align-items-end"
+							style="background-image:url('<c:url value="/resources/images/${wl.wine_image }" />');">
+							<a data-toggle="modal" href="#myModal"
+								class="icon d-flex justify-content-center align-items-center">
+								<span class="icon-expand"></span>
+							</a>
+							<div class="desc w-100 px-4">
+								<div class="text w-100 mb-3">
+									<span>${wl.wine_type }</span>
+									<h2>
+										<a href="work-single.html">${wl.wine_name }</a>
+									</h2>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-2.jpg"/>');">
-						<a href="images/model-2.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-3.jpg"/>');">
-						<a href="images/model-3.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-4.jpg"/>');">
-						<a href="images/model-4.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+						aria-labelledby="ModalLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="ModalLabel" style="color: #9d8f8f">${wl.wine_name }</h5>
+									<button type="button" class="close" data-dismiss="modal"
+										aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">${wl.wine_name }</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary"
+										data-dismiss="modal">Close</button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-5.jpg"/>');">
-						<a href="images/model-5.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-6.jpg"/>');">
-						<a href="images/model-6.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-7.jpg"/>');">
-						<a href="images/model-7.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-8.jpg"/>');">
-						<a href="images/model-8.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-9.jpg"/>');">
-						<a href="images/model-9.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-10.jpg"/>');">
-						<a href="images/model-10.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-11.jpg"/>');">
-						<a href="images/model-11.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 ftco-animate">
-					<div class="model img d-flex align-items-end"
-						style="background-image:url('<c:url value="/resources/images/model-12.jpg"/>');">
-						<a href="images/model-12.jpg"
-							class="icon image-popup d-flex justify-content-center align-items-center">
-							<span class="icon-expand"></span>
-						</a>
-						<div class="desc w-100 px-4">
-							<div class="text w-100 mb-3">
-								<span>Nature</span>
-								<h2>
-									<a href="work-single.html">Beautiful Work</a>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
+				</c:forEach>
 			</div>
 		</div>
+		<!-- 와인 목록 끝 -->
+
 	</section>
 	<!-- End Project Section -->
 
+	<!-- Start Review Section -->
 	<section class="ftco-section testimony-section" id="testimonial">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-4 heading-section ftco-animate">
-					<span class="subheading">Testimony</span>
+					<span class="subheading">Review</span>
 					<h2 class="mb-4">Our satisfied customer says</h2>
 					<p>Far far away, behind the word mountains, far from the
 						countries Vokalia and Consonantia, there live the blind texts.
@@ -643,6 +270,7 @@
 			<div class="row ftco-animate">
 				<div class="col-md-12">
 					<div class="carousel-testimony owl-carousel">
+						<!--리뷰 한덩이 시작 -->
 						<div class="item">
 							<div class="testimony-wrap p-4 pb-5">
 								<div class="user-img mb-4"
@@ -653,88 +281,7 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">CEO Founder of Commercial
-											Building</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_2.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">CEO Founder of Interior Design</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_3.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">Exterior Designer</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">Landscape Designer</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
+									<p class="mb-5 pl-4 line">5Far far away, behind the word
 										mountains, far from the countries Vokalia and Consonantia,
 										there live the blind texts.</p>
 									<div class="pl-5">
@@ -744,11 +291,14 @@
 								</div>
 							</div>
 						</div>
+						<!--리뷰 한덩이 끝 -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- End Review Section -->
+	
 
 	<!-- Start Contact Section -->
 	<section class="ftco-section contact-section" id="contact">
@@ -884,7 +434,6 @@
 		<svg class="circular" width="48px" height="48px">
 			<circle class="path-bg" cx="24" cy="24" r="22" fill="none"
 				stroke-width="4" stroke="#eeeeee" />
-			
 			<circle class="path" cx="24" cy="24" r="22" fill="none"
 				stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg>
 	</div>
@@ -925,4 +474,5 @@
 		type="text/javascript"></script>
 
 </body>
+
 </html>
