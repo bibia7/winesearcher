@@ -65,6 +65,26 @@ $(document).ready(function($) {
 	};
 	fullHeight();
 	
+	var fullHeight2 = function() {
+
+		$('.js-fullheight2').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.js-fullheight2').css('height', $((window).height()));
+		});
+
+	};
+	fullHeight2();
+	
+	var testttt = function() {
+
+		$('.testtt').css('height', $(window).height());
+		$(window).resize(function(){
+			$('.testtt').css('height', $((window).height()/2));
+		});
+
+	};
+	testtt();
+	
 	var counter = function() {
 		
 		$('#section-counter, .ftco-about').waypoint( function( direction ) {
