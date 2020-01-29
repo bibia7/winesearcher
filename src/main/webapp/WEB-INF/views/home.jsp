@@ -57,15 +57,10 @@
 		<ul class="nav-menu">
 			<li><a data-scroll="home" href="#home" class="dot active"> <span>Home</span>
 			</a></li>
-			<li><a data-scroll="about" href="#about" class="dot"> <span>About</span>
-			</a></li>
-			<li><a data-scroll="services" href="#services" class="dot">
-					<span>Services</span>
-			</a></li>
 			<li><a data-scroll="work" href="#work" class="dot"> <span>Gallery</span>
 			</a></li>
 			<li><a data-scroll="testimonial" href="#testimonial" class="dot">
-					<span>Testimony</span>
+					<span>Review</span>
 			</a></li>
 			<li><a data-scroll="contact" href="#contact" class="dot"> <span>Contact</span>
 			</a></li>
@@ -198,7 +193,7 @@
 	</section>
 	<!-- End login Section -->
 
-	<!-- Start Testimonials Section -->
+	<!-- Start Project Section -->
 	<section id="work" class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -260,11 +255,12 @@
 	</section>
 	<!-- End Project Section -->
 
+	<!-- Start Review Section -->
 	<section class="ftco-section testimony-section" id="testimonial">
 		<div class="container">
 			<div class="row justify-content-center mb-5 pb-3">
 				<div class="col-md-4 heading-section ftco-animate">
-					<span class="subheading">Testimony</span>
+					<span class="subheading">Review</span>
 					<h2 class="mb-4">Our satisfied customer says</h2>
 					<p>Far far away, behind the word mountains, far from the
 						countries Vokalia and Consonantia, there live the blind texts.
@@ -274,6 +270,7 @@
 			<div class="row ftco-animate">
 				<div class="col-md-12">
 					<div class="carousel-testimony owl-carousel">
+						<!--리뷰 한덩이 시작 -->
 						<div class="item">
 							<div class="testimony-wrap p-4 pb-5">
 								<div class="user-img mb-4"
@@ -284,88 +281,7 @@
 									</span>
 								</div>
 								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">CEO Founder of Commercial
-											Building</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_2.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">CEO Founder of Interior Design</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_3.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">Exterior Designer</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
-										mountains, far from the countries Vokalia and Consonantia,
-										there live the blind texts.</p>
-									<div class="pl-5">
-										<p class="name">Garreth Smith</p>
-										<span class="position">Landscape Designer</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testimony-wrap p-4 pb-5">
-								<div class="user-img mb-4"
-									style="background-image:url('<c:url value="/resources/images/person_1.jpg"/>');">
-									<span
-										class="quote d-flex align-items-center justify-content-center">
-										<i class="icon-quote-left"></i>
-									</span>
-								</div>
-								<div class="text">
-									<p class="mb-5 pl-4 line">Far far away, behind the word
+									<p class="mb-5 pl-4 line">5Far far away, behind the word
 										mountains, far from the countries Vokalia and Consonantia,
 										there live the blind texts.</p>
 									<div class="pl-5">
@@ -375,11 +291,14 @@
 								</div>
 							</div>
 						</div>
+						<!--리뷰 한덩이 끝 -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- End Review Section -->
+	
 
 	<!-- Start Contact Section -->
 	<section class="ftco-section contact-section" id="contact">
