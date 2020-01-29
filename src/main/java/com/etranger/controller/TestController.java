@@ -18,11 +18,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.etranger.domain.MemberBean;
 import com.etranger.service.MemberService;
 
-
-
-/**
- * Handles requests for the application home page.
- */
 @Controller
 public class TestController {
 	@Inject		

@@ -34,7 +34,7 @@
 		</beans:constructor-arg>
 	</beans:bean>
 	
-
+	
 	<context:component-scan base-package="com.etranger.wine" />
 	<context:component-scan base-package="com.etranger.controller" />
 	<context:component-scan base-package="com.etranger.dao" />
