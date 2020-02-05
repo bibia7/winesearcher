@@ -63,7 +63,7 @@ public class MemberController {
 	//4.파싱 닉네임 세션으로 저장
 	session.setAttribute("sessionId",nickname); //세션 생성
 	model.addAttribute("result", apiResult);
-	return "redirect:/";
+	return "login-cb";
 	}
 	
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
@@ -83,7 +83,7 @@ public class MemberController {
 		// userCheck(mb) 메서드호출
 		MemberBean mb2 = memberService.userCheck(mb);
 		if (mb2 != null) {
-			// 일치 세션값 생성 이동 /member/main
+			// 일치 세션값 생성 이동 
 			session.setAttribute("email", mb.getEmail());
 			// /member/main
 			return "redirect:/";
