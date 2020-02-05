@@ -34,13 +34,16 @@
 		</beans:constructor-arg>
 	</beans:bean>
 	
+	<!-- NaverLoginBO Class에 대한 Bean설정 추가 -->
+	<beans:bean id="naverLoginBO" class="com.etranger.api.NaverLoginBO" />
+
 	
 	<context:component-scan base-package="com.etranger.wine" />
 	<context:component-scan base-package="com.etranger.controller" />
 	<context:component-scan base-package="com.etranger.dao" />
 	<context:component-scan base-package="com.etranger.domain" />
 	<context:component-scan base-package="com.etranger.service" />
-	
+	<context:component-scan base-package="com.etranger.api" />
 	
 	
 </beans:beans>

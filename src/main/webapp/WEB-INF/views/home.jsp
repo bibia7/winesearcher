@@ -107,19 +107,26 @@
 
 	<!-- Start login Section -->
 	<section class="ftco-section contact-section" id="loginJoin">
+	<c:choose>
+	<c:when test="${email != null}">
+	<h3 class="text-center mb-4">${email} 님 환영합니다! </h3>
+	<h4 class="text-center mb-4"><a href='<c:url value="/logout"/>'>로그아웃</a></h4>
+	</c:when>
+
+	<c:otherwise>
 		<div class="container">
 			<div class="row block-9">
 				<div class="col-md-6 ftco-animate">
-					<form action="login" class="contact-form p-4 p-md-5 py-md-5">
+					<form action='<c:url value="/login"/>' class="contact-form p-4 p-md-5 py-md-5" method="post">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
+							<input type="text" name="email" class="form-control" placeholder="Your Email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control"
+							<input type="password" name="password" class="form-control"
 								placeholder="Your Password">
 						</div>
 						<div class="form-group">
-							<input type="submit" value="LOG-IN"
+							<input type="submit" value="login"
 								class="btn btn-primary py-3 px-5">
 						</div>
 
@@ -148,6 +155,7 @@
 								//]]>
 							</script>
 						</div>
+						
 						<div class="form-group">
 							<script type="text/javascript"
 								src="https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.0.js"
@@ -160,12 +168,12 @@
 								var naverLogin = new naver.LoginWithNaverId(
 										{
 											clientId : "6pcogsakeagRCsy4J3YN",
-											callbackUrl : "http://localhost:8080/wine/login-cb",
-											isPopup : false, /* 팝업을 통한 연동처리 여부 */
+											callbackUrl : "http://localhost:8080/wine/cb",
+											isPopup : true, /* 팝업을 통한 연동처리 여부 */
 											loginButton : {
-												color : "green",
+												color : "white",
 												type : 3,
-												height : 48
+												height : 49
 											}
 										/* 로그인 버튼의 타입을 지정 */
 										});
@@ -179,17 +187,17 @@
 				</div>
 
 				<div class="col-md-6 d-flex align-items-stretch">
-					<form action="join" class="contact-form p-4 p-md-5 py-md-5">
+					<form action='<c:url value="/join"/>' class="contact-form p-4 p-md-5 py-md-5" method="post">
 						<h3 class="mb-4">didn't you sign-in yet? join us</h3>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
+							<input type="text" name="email" class="form-control" placeholder="Your Email">
 						</div>
 						<div class="form-group">
-							<input type="password" class="form-control"
+							<input type="password" name="password" class="form-control"
 								placeholder="Your Password">
 						</div>
 						<div class="form-group">
-							<input type="submit" value="JOIN"
+							<input type="submit" value="join"
 								class="btn btn-primary py-3 px-5">
 						</div>
 
@@ -197,6 +205,9 @@
 				</div>
 
 			</div>
+		</div>
+		</c:otherwise>
+		</c:choose>
 	</section>
 	<!-- End login Section -->
 
