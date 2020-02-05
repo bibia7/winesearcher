@@ -243,18 +243,79 @@
 								</div>
 								<div class="modal-body">
 									<div class="row">
-									<div class="col-6">
-									<img class="img-fluid" src="<c:url value="/resources/images/${wl.wine_image }"/>" style="max-width: 100%; height: auto;"/>
-									</div>
 										<div class="col-6">
-										<h3 style="color: #9d8f8f">4.3</h3>
-										별점 띢띢띢<br>
-										￦ ${wl.wine_price }<br>
-										${wl.wine_info }
+											<img class="img-fluid"
+												src="<c:url value="/resources/images/${wl.wine_image }"/>"
+												style="max-width: 100%; height: auto;" />
+										</div>
+										<div class="col-6">
+											<h3 style="color: #9d8f8f">${wl.review_star }</h3>
+											<c:choose>
+												<c:when test="${wl.review_star % 2 == 0 }">
+													<c:forEach var="i" begin="1" end="${wl.review_star / 2 }">
+														<span class="icon-star"></span>
+													</c:forEach>
+													<c:if test="${wl.review_star != 10 }">
+													<c:forEach var="i" begin="1" end="${5 - (wl.review_star / 2) }" step="1">
+														<span class="icon-star-o"></span>
+													</c:forEach>
+													</c:if>
+												</c:when>
+
+												<c:when test="${wl.review_star % 2 != 0 }">
+													<c:forEach var="i" begin="1" end="${wl.review_star / 2 }">
+														<span class="icon-star"></span>
+													</c:forEach>
+													<span class="icon-star-half-o"></span>
+													<c:if test="${wl.review_star != 9 }">
+													<c:forEach var="i" begin="1" end="${5 - (wl.review_star / 2) }" step="1">
+														<span class="icon-star-o"></span>
+													</c:forEach>
+													</c:if>
+												</c:when>
+											</c:choose>
+
+											<br> ￦${wl.wine_price }<br> ${wl.wine_info }
 										</div>
 									</div>
 									<div class="row">
 										<canvas id="myChart1" style="height: 10%; width: 5%;"></canvas>
+										<script
+											src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+										<script>
+											var ctx1 = document.getElementById(
+													"myChart1")
+													.getContext('2d');
+											var myRadarChart = new Chart(
+													ctx1,
+													{
+														type : 'radar',
+														data : {
+															labels : [ '맛1',
+																	'맛2', '맛3',
+																	'맛4' ],
+															datasets : [ {
+																data : [
+																		'${wl.review_taste1}',
+																		'${wl.review_taste2}',
+																		'${wl.review_taste3}',
+																		'${wl.review_taste4}' ]
+															} ]
+														},
+														options : {
+															scale : {
+																angleLines : {
+																	display : false
+																},
+																ticks : {
+																	suggestedMin : 0,
+																	suggestedMax : 10
+																}
+															}
+														}
+													});
+										</script>
+
 									</div>
 								</div>
 								<div class="modal-footer">
@@ -565,34 +626,9 @@
 		type="text/javascript"></script>
 	<script src='<c:url value="/resources/js/main.js"/>'
 		type="text/javascript"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
-	<script>
-		var ctx1 = document.getElementById("myChart1").getContext('2d');
-		var myRadarChart = new Chart(ctx1,
-				{
-					type : 'radar',
-					data : {
-						labels : [ 'Running', 'Swimming', 'Eating', 'Cycling',
-								'test' ],
-						datasets : [ {
-							data : [ 20, 10, 4, 2, 40 ]
-						} ]
-					},
-					options : {
-						scale : {
-							angleLines : {
-								display : false
-							},
-							ticks : {
-								suggestedMin : 50,
-								suggestedMax : 100
-							}
-						}
-					}
-				});
-	</script>
+
+
 
 </body>
 

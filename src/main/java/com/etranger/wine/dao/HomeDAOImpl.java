@@ -18,7 +18,7 @@ public class HomeDAOImpl implements HomeDAO {
 	private static final String namespace="com.etranger.mapper.HomeMapper";
 	
 	@Override
-	public List<HomeBean> getWineList() {
-		return sqlSession.selectList(namespace+".getItemList");
+	public List<HomeBean> getWineList(int wine_id) {
+		return sqlSession.selectList(namespace+".getItemList", wine_id);
 	}
 }
