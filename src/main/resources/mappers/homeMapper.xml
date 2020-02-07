@@ -6,7 +6,12 @@
   <mapper namespace="com.etranger.mapper.HomeMapper">
  
   <select id="getItemList" resultType="com.etranger.wine.domain.HomeBean">
+<<<<<<< HEAD
  	select * from wine
+=======
+ 	select w.wine_name, w.wine_grapes, w.wine_type, w.wine_image, w.wine_price, w.wine_info, r.review_star, r.review_taste1, r.review_taste2, r.review_taste3, r.review_taste4 from wine w
+ 	join review r on r.wine_num = #{wine_id}
+>>>>>>> refs/remotes/origin/wine
  </select>
  
   </mapper>
