@@ -44,6 +44,11 @@
 	<context:component-scan base-package="com.etranger.review.dao" />
 	
 
-
+	<context:component-scan base-package="com.etranger.controller" />
+	<context:component-scan base-package="com.etranger.dao" />
+	<context:component-scan base-package="com.etranger.aop" />
+	<context:component-scan base-package="com.etranger.service" />
+	<context:component-scan base-package="com.etranger.domain" />
+	
 	
 </beans:beans>

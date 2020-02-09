@@ -7,4 +7,8 @@ import com.etranger.wine.domain.HomeBean;
 public interface HomeService {
 
 	public List<HomeBean> getWineList(int wine_id);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/review

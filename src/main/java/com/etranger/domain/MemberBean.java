@@ -1,8 +1,9 @@
 package com.etranger.domain;
 
-public class TestBean {
+public class MemberBean {
 	private String email;
 	private String password;
+	
 	
 	public String getEmail() {
 		return email;

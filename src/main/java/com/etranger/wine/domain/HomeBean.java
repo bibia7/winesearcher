@@ -103,4 +103,8 @@ public class HomeBean {
 	public void setReview_taste4(int review_taste4) {
 		this.review_taste4 = review_taste4;
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/review
