@@ -193,12 +193,12 @@
 	</section>
 	<!-- End login Section -->
 
-	<!-- Start Project Section -->
+	<!-- Start Testimonials Section -->
 	<section id="work" class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-4 heading-section text-center ftco-animate pb-5">
-					<h2 class="mb-4">Selected Projects</h2>
+					<h2 class="mb-4">와인 섹션</h2>
 					<p>A small river named Duden flows by their place and supplies
 						it with the necessary regelialia. It is a paradisematic country.</p>
 				</div>
@@ -208,9 +208,13 @@
 		<!-- 와인 목록 -->
 		<div class="container-fluid px-md-0">
 			<div class="row no-gutters">
+			ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
 				<c:forEach var="wl" items="${wineList }">
+				ㅁㅁㅁㅁㅁ
 					<div class="col-md-4 ftco-animate">
+					ㄴㄴㄴㄴㄴㄴㄴㄴㄴ
 						<div class="model img d-flex align-items-end"
+						ㄹㄹㄹㄹㄹㄹ
 							style="background-image:url('<c:url value="/resources/images/${wl.wine_image }" />');">
 							<a data-toggle="modal" href="#myModal"
 								class="icon d-flex justify-content-center align-items-center">
@@ -218,9 +222,9 @@
 							</a>
 							<div class="desc w-100 px-4">
 								<div class="text w-100 mb-3">
-									<span>${wl.wine_type }</span>
+									<span>Wine Type ${wl.wine_type }</span>
 									<h2>
-										<a href="work-single.html">${wl.wine_name }</a>
+										<a href="work-single.html"> Wine Name ${wl.wine_name }</a>
 									</h2>
 								</div>
 							</div>
@@ -229,8 +233,8 @@
 
 					<!-- Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog"
-						aria-labelledby="ModalLabel" aria-hidden="true">
-						<div class="modal-dialog" role="document">
+						aria-labelledby="ModalScrollableTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-scrollable" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
 									<h5 class="modal-title" id="ModalLabel" style="color: #9d8f8f">${wl.wine_name }</h5>
@@ -239,7 +243,83 @@
 										<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">${wl.wine_name }</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-6">
+											<img class="img-fluid"
+												src="<c:url value="/resources/images/${wl.wine_image }"/>"
+												style="max-width: 100%; height: auto;" />
+										</div>
+										<div class="col-6">
+											<h3 style="color: #9d8f8f">${wl.review_star }</h3>
+											<c:choose>
+												<c:when test="${wl.review_star % 2 == 0 }">
+													<c:forEach var="i" begin="1" end="${wl.review_star / 2 }">
+														<span class="icon-star"></span>
+													</c:forEach>
+													<c:if test="${wl.review_star != 10 }">
+													<c:forEach var="i" begin="1" end="${5 - (wl.review_star / 2) }" step="1">
+														<span class="icon-star-o"></span>
+													</c:forEach>
+													</c:if>
+												</c:when>
+
+												<c:when test="${wl.review_star % 2 != 0 }">
+													<c:forEach var="i" begin="1" end="${wl.review_star / 2 }">
+														<span class="icon-star"></span>
+													</c:forEach>
+													<span class="icon-star-half-o"></span>
+													<c:if test="${wl.review_star != 9 }">
+													<c:forEach var="i" begin="1" end="${5 - (wl.review_star / 2) }" step="1">
+														<span class="icon-star-o"></span>
+													</c:forEach>
+													</c:if>
+												</c:when>
+											</c:choose>
+
+											<br> ￦${wl.wine_price }<br> ${wl.wine_info }
+										</div>
+									</div>
+									<div class="row">
+										<canvas id="myChart1" style="height: 10%; width: 5%;"></canvas>
+										<script
+											src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+										<script>
+											var ctx1 = document.getElementById(
+													"myChart1")
+													.getContext('2d');
+											var myRadarChart = new Chart(
+													ctx1,
+													{
+														type : 'radar',
+														data : {
+															labels : [ '맛1',
+																	'맛2', '맛3',
+																	'맛4' ],
+															datasets : [ {
+																data : [
+																		'${wl.review_taste1}',
+																		'${wl.review_taste2}',
+																		'${wl.review_taste3}',
+																		'${wl.review_taste4}' ]
+															} ]
+														},
+														options : {
+															scale : {
+																angleLines : {
+																	display : false
+																},
+																ticks : {
+																	suggestedMin : 0,
+																	suggestedMax : 10
+																}
+															}
+														}
+													});
+										</script>
+
+									</div>
+								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-primary"
 										data-dismiss="modal">Close</button>

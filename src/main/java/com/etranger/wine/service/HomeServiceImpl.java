@@ -14,8 +14,8 @@ public class HomeServiceImpl  implements HomeService{
 	HomeDAO homeDAO;
 	
 	@Override
-	public List<HomeBean> getWineList(){
-		return homeDAO.getWineList();
+	public List<HomeBean> getWineList(int wine_id){
+		return homeDAO.getWineList(wine_id);
 		
 	}
 }

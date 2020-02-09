@@ -16,6 +16,14 @@ public class HomeBean {
 	private String wine_type;
 	private String wine_image;
 	private int wine_price;
+	private String wine_info;
+	
+	private int review_star;
+	private int review_taste1;
+	private int review_taste2;
+	private int review_taste3;
+	private int review_taste4;
+	
 	
 	public int getWine_num() {
 		return wine_num;
@@ -58,5 +66,41 @@ public class HomeBean {
 	}
 	public void setWine_price(int wine_price) {
 		this.wine_price = wine_price;
+	}
+	public String getWine_info() {
+		return wine_info;
+	}
+	public void setWine_info(String wine_info) {
+		this.wine_info = wine_info;
+	}
+	public int getReview_star() {
+		return review_star;
+	}
+	public void setReview_star(int review_star) {
+		this.review_star = review_star;
+	}
+	public int getReview_taste1() {
+		return review_taste1;
+	}
+	public void setReview_taste1(int review_taste1) {
+		this.review_taste1 = review_taste1;
+	}
+	public int getReview_taste2() {
+		return review_taste2;
+	}
+	public void setReview_taste2(int review_taste2) {
+		this.review_taste2 = review_taste2;
+	}
+	public int getReview_taste3() {
+		return review_taste3;
+	}
+	public void setReview_taste3(int review_taste3) {
+		this.review_taste3 = review_taste3;
+	}
+	public int getReview_taste4() {
+		return review_taste4;
+	}
+	public void setReview_taste4(int review_taste4) {
+		this.review_taste4 = review_taste4;
 	}
 }

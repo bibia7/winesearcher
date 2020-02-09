@@ -10,6 +10,6 @@ import com.etranger.wine.domain.HomeBean;
 
 public interface HomeDAO {
 
-	public List<HomeBean> getWineList();
+	public List<HomeBean> getWineList(int wine_id);
 
 }
