@@ -57,15 +57,10 @@
 		<ul class="nav-menu">
 			<li><a data-scroll="home" href="#home" class="dot active"> <span>Home</span>
 			</a></li>
-			<li><a data-scroll="about" href="#about" class="dot"> <span>About</span>
-			</a></li>
-			<li><a data-scroll="services" href="#services" class="dot">
-					<span>Services</span>
-			</a></li>
 			<li><a data-scroll="work" href="#work" class="dot"> <span>Gallery</span>
 			</a></li>
 			<li><a data-scroll="testimonial" href="#testimonial" class="dot">
-					<span>Testimony</span>
+					<span>Review</span>
 			</a></li>
 			<li><a data-scroll="contact" href="#contact" class="dot"> <span>Contact</span>
 			</a></li>
@@ -303,6 +298,7 @@
 		</div>
 	</section>
 	<!-- End Review Section -->
+	
 
 	<!-- Start Contact Section -->
 	<section class="ftco-section contact-section" id="contact">

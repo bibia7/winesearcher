@@ -1,6 +1,21 @@
-package com.etranger.domain;
+package com.etranger.review.domain;
 
+//	+----------------+--------------+------+-----+---------+----------------+
+//	| Field          | Type         | Null | Key | Default | Extra          |
+//	+----------------+--------------+------+-----+---------+----------------+
+//	| review_num     | int(11)      | NO   | PRI | NULL    | auto_increment |
+//	| member_email   | varchar(50)  | YES  |     | NULL    |                |
+//	| wine_num       | int(11)      | YES  |     | NULL    |                |
+//	| review_content | varchar(500) | YES  |     | NULL    |                |
+//	| review_star    | int(11)      | YES  |     | NULL    |                |
+//	| review_taste1  | int(11)      | YES  |     | NULL    |                |
+//	| review_taste2  | int(11)      | YES  |     | NULL    |                |
+//	| review_taste3  | int(11)      | YES  |     | NULL    |                |
+//	| review_taste4  | int(11)      | YES  |     | NULL    |                |
+//	+----------------+--------------+------+-----+---------+----------------+	
+//	
 public class ReviewBean {
+	
 	private int review_num;
 	private String member_email;
 	private int wine_num;
@@ -10,7 +25,6 @@ public class ReviewBean {
 	private int review_taste2;
 	private int review_taste3;
 	private int review_taste4;
-	
 	
 	public int getReview_num() {
 		return review_num;
@@ -67,7 +81,6 @@ public class ReviewBean {
 		this.review_taste4 = review_taste4;
 	}
 	
-	
-	
+
 	
 }

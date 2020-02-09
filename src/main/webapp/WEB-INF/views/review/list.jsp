@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Wine Searcher</title>
+    <title>Review</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href='<c:url value="/resources/css/flaticon.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/icomoon.css"/>' type="text/css">
     <link rel="stylesheet" href='<c:url value="/resources/css/style.css"/>' type="text/css">
+    <link rel="stylesheet" href='<c:url value="/resources/css/style_etranger.css"/>' type="text/css">
   </head>
   <body>
 
@@ -33,23 +34,13 @@
 		      </a>
 		    </li>
 		    <li>
-		      <a data-scroll="about" href="index.html#about" class="dot">
-		        <span>About</span>
-		      </a>
-		    </li>
-		    <li>
-		      <a data-scroll="services" href="index.html#services" class="dot">
-		        <span>Services</span>
-		      </a>
-		    </li>
-		    <li>
 		      <a data-scroll="work" href="index.html#work" class="dot active">
 		        <span>Gallery</span>
 		      </a>
 		    </li>
 		    <li>
 		      <a data-scroll="testimonial" href="index.html#testimonial" class="dot">
-		        <span>Testimony</span>
+		        <span>Review</span>
 		      </a>
 		    </li>
 		    <li>
@@ -68,7 +59,7 @@
         <div class="row no-gutters slider-text js-fullheight2 align-items-center justify-content-center" >
           <div class="col-lg-7 ftco-animate d-flex align-items-center">
           	<div class="text text-center">
-          		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>Snapshot<small>Photographer / San Francisco</small></a></h1>
+          		<h1 class="logo"><a href="index.html"><span class="flaticon-camera-shutter"></span>Review<small></small></a></h1>
 	            <h1 class="bread">Work Single</h1>
 	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>About us</span></p>
             </div>
@@ -81,42 +72,60 @@
 		<section class="ftco-section work-single ftco-no-pt ftco-no-pb">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 d-flex align-items-stretch">
-						<div class="img w-100" style="background-image: url('<c:url value="/resources/images/model-5.jpg"/>');"></div>
-					</div>
-					<div class="col-md-6 py-md-5">
-						<div class="text pl-md-5 py-5">
-							<h2><a href="work-single.html">Beautiful Work</a></h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-							<blockquote class="blockquote mt-5">
-		          	<p class="mb-2">"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.."</p>
-		          	<span>&mdash; Lucy Lee</span>
-		          </blockquote>
-								
-							<div class="work-info mb-4">
-								<span>Project Name</span>
-								<h3>Beautiful Girl</h3>
-							</div>
+					<div class="col-md-8 ftco-animate" style="border: 1px solid #9da1a5;">
+			<div id="article-info">
+			<h2>제목</h2>
+			<div class="writer"><strong>memberEmail</strong> 님</div>
+			</div> <!-- article-info끝 -->
+			<div id="article-content-wrapper">
+			<div class="content-header">
+			<div id="article-time">
+			시간
+			</div>
+<!-- 			<div id="article-readcnt">조회수 : n회</div> -->
+<!-- 			<div id="article-commentcnt">댓글 : n개</div> -->
+			</div><!-- content-header끝 -->
+			
+			<div class="content-stararea">
+			<div id="stars"> 
+			<!-- 별점 -->
+			</div>
+			</div><!-- content-star끝 -->
+			
+			<div class="content-view">
+<%-- 			<p><img src="reviewUpload/<%=article.getReview_image()%>" style="max-width: 100%; height: auto;"></p> --%>
+			<p>내용</p>
+			<!--레이아웃 위한 pre 삽입  -->
+			<pre>
+			
+			
+			
+			
+			
+			</pre>
+			</div>
+			<!-- content-view끝 -->
+			<div class="content-footer">
+			
+					<div id="modi-del">
+					<a href="#" class="btncontrol btncontrol-sm btn-default"><i class="fa fa-pencil-alt"></i>수정</a>
+					<a id="btn_ReviewDelete" href="#layer2ReviewDelete" class="btncontrol btnforshare-rv btn-default"><i class="fa fa-trash"></i>삭제</a>
+   					</div>
+   					
+					<a href="#" class="btncontrol btnforshare-rv btn-default"><i class="fa fa-list"></i>목록</a>
+			</div>
+			</div><!-- article-content-wrapper끝  -->
+			
+            <!--     	본문 내용 들어가는 곳  끝-->
+            
+			<!-- 댓글시작 -->
+            <div class="pt-5 mt-5">
+            
+<%--               <jsp:include page="commentlist.jsp"/> --%>
+            </div> <!-- 댓글 끝 -->
 
-							<div class="work-info mb-4">
-								<span>My Role</span>
-								<h3>Experimental</h3>
-							</div>
-
-							<div class="work-info mb-4">
-								<span>Project Name</span>
-								<h3><span class="mr-2">Agency</span> <span class="mr-2">Fashion</span> <span class="mr-2">Model</span> <span class="mr-2">Photo</span></h3>
-							</div>
-
-							<ul class="ftco-footer-social p-0">
-	              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-	              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-	              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-	            </ul>
-
-						</div>
-					</div>
+          </div> <!-- .col-md-8 -->
+					
 				</div>
 			</div>
 		</section>
@@ -145,7 +154,6 @@
 
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
 
     <script src='<c:url value="/resources/js/jquery.min.js"/>' type="text/javascript"></script>
     <script src='<c:url value="/resources/js/jquery-migrate-3.0.1.min.js"/>' type="text/javascript"></script>
